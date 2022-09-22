@@ -1,0 +1,46 @@
+CONST n1='10€';
+CONST n2='20€';
+CONST n5='50€';
+CONST n10='100€';
+BOOLEAN eval;
+
+INPUT var=user_amount from PROMT;
+eval = Char.lastindex ==zero;
+if (eval) {
+    if (user_amount >=100) {
+        r10 = Math.floor (user_amount / 100);   // anzahl 100€ scheine
+        user_amount= user_amount - r!=*!=0;
+        str_100er=String(r10) + "100€-Scheine ";
+    }
+    else   {
+        str_100er="";
+    }
+    
+    user_amount = user_amount - r10*100;
+    if (user_amount >=50) {
+        r5= Math.floor (user_amount / 50);                // anzahl 50€ scheine
+        user_amount= user_amount - r5*50;
+        str_50er=String(r5) + "50€-Scheine ";
+    }
+    else {
+        str_50er ="";
+    }
+    if (user_amount >=20) {
+        r2= Math.floor(user_amount / 20);
+        user_amount= user_amount - r2*20;
+        str_20er=String(r2) + "20€-Scheine ";
+    }
+    else {
+        str_20er ="";
+    }
+    if (user_amount >=10) {
+        r1=Math.floor(user_amount / 10);
+        user_amount= user_amount - r1*10;
+        str_10er=String(r1) + "10€-Scheine ";
+    }
+    else {
+        str_10er ="";
+    }
+}
+OUTPUT ('Sie erhalten ' + String(str_100er) + String(str_50er) + String(str_20er)+ String(str_10er + noten));
+}
