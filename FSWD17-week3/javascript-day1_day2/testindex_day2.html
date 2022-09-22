@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        js day2
+    </title>
+</head>
+
+<body>
+    <script>
+        document.write("Julie is still not good ");
+        let br = '<br>';
+        let user_name;
+        let user_age = 53;
+        let user_nick = 'Bob';
+        let var1, var2, var3, var4
+        // let br="\n";      geht nicht wegen non-Html support
+        if (user_name >= 18) {
+            console.log("user is an adult");
+        }
+        else {
+            console.log("username: ", typeof (username));
+        }
+
+
+        let b = 'I am a Java developer.';
+        let temp = new Array();
+        temp = b.split(' ');
+        document.write(br + b);
+        // alert("Hello Julie"); 
+        let weekDay = new Date().getDay();     // the week starts with sunday for the Date-funct
+        switch (weekDay) {
+            case 0:console.log('Today is sunday');
+            break;
+            case 1:console.log('Today is monday');
+            break;
+            case 2:console.log('Today is tuesday');
+            break;
+            case 3:console.log('Today is wednsday');
+            break;
+            case 4:console.log('Today is thursday');
+            break;
+            case 5:console.log('Today is friday');
+            break;
+            case 6:console.log('Today is saturday');
+            break;
+            default: 
+            console.log('Day not found');
+        }
+        function printUserName(first_name, last_name) {
+            console.log(`inside username-funct: Here is our new user ${first_name} ${last_name}`);
+        }
+        printUserName ('John','Doe');
+        function greeting() {
+            //let mess= prompt('leave us a message, please: ');
+            // console.log(mess);
+        }
+        greeting();
+        let randomNumber = Math.random();
+        console.log (randomNumber, Math.floor(randomNumber));
+        const random = Math.floor(randomNumber * 10) +1;
+        console.log (random);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+
+.bs-success{
+  color: #198754  !important;
+  /*  text-align: center;
+   font-family: "Archivo", sans-serif; */
+  margin-top: 11px;
+}
+
+.bg-info {
+    --bs-bg-opacity: 0.9;
+    background-color: rgba(var(--bs-info-rgb),var(--bs-bg-opacity))!important;
+ }

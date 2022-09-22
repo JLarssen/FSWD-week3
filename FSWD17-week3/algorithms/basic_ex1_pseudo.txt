@@ -1,0 +1,30 @@
+var msg1 = "My number is higher than " + usernum +"guess a higher number!";
+var msg2 = "My number is lower than " + usernum + guess a lower number!";
+var msg3 = "you succeeded in guessing the right number! It really is ";
+var msg4 = "Cancel guessing game";
+var msg_info = "Please guess a number between 1 and 100";
+
+var num=new random int range 1 to 100;
+var boolean succ=false;
+var boolean cancel_game=false;
+
+while (!succ AND !cancel_game) {
+    OUTPUT msg_info, msg4;
+    INPUT var=usernum from UI;
+    INPUT cancel_game;
+    EVAL range of usernum;
+    IF (usernum > num) { 
+        msg_info=msg2;
+    }
+    ELSE IF (usernum < num) {
+        msg_info=msg1; 
+    }
+    ELSE {
+        msg_info=msg3 + num;
+        succ=true;
+    }
+}
+IF (cancel_game) {
+    msg_info="Game over!"
+}
+OUTPUT msg_info;
