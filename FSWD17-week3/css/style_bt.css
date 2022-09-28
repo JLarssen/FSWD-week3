@@ -3,10 +3,42 @@
   color: #198754  !important;
   /*  text-align: center;
    font-family: "Archivo", sans-serif; */
-  margin-top: 11px;
+  margin-top: 5%;
+}
+
+.bs-beige{
+  color: beige;
 }
 
 .bg-info {
     --bs-bg-opacity: 0.9;
     background-color: rgba(var(--bs-info-rgb),var(--bs-bg-opacity))!important;
  }
+
+p {
+  font-weight: 800;
+}
+
+.bs-littlebox {
+  background-color: saddlebrown;
+  width: 75px;
+  height: 75px;
+  margin: 4% 1% 4% 1%;
+  border: sandybrown solid 1px; 
+}
+
+.nav--red {
+  background-color: rgb(182, 50, 50);
+  color: white;
+  padding: 5px 40px;
+ /*  width: 100%;
+  heigth: 24px; */
+}
+
+.container--white {
+  background-color: white;
+  width: 100%;
+  height:fit-content;
+  box-sizing: border-box;
+  border: lightgray solid 45px
+}

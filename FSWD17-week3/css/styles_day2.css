@@ -1,0 +1,32 @@
+.bs-success{
+    color: #198754  !important;
+    /*  text-align: center;
+     font-family: "Archivo", sans-serif; */
+    margin-top: 5%;
+  }
+
+.infobox {
+    display: flex;
+    background-color: #198754;
+    color: white;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    height: fit-content;
+    box-sizing: border-box;
+    border: #eee solid 3px
+  }
+
+  .btn {
+    background-color: #198754;
+    border-radius: 2rm;
+  }
+
+  .toggle_disp {
+    margin-top: 2%;
+    display: none;
+  }
+
+  .toggle_info {
+    margin-top: 2%;
+    display: none;
+  }
